@@ -1,0 +1,32 @@
+@media (max-width: 739px) {
+    .hamburger {
+        display: block;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column;
+    }
+    .navigation.active {
+        display: flex;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .card2 img {
+        height: 200px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-areas: 
+            "title title"
+            "card1 card2"
+            "card3 card3";
+        grid-template-columns: 2fr 1fr;
+    }
+}
