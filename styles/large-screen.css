@@ -71,6 +71,7 @@ nav {
     align-items: center;
     width: 100%;
     font-size: large;
+    transition: all 0.3s ease;
 }
 
 .navigation li {
@@ -93,6 +94,9 @@ nav a:hover {
     color: #000;
 }
 
+.hamburger {
+    display: none;
+}
 
 main {
     max-width: 1200px;

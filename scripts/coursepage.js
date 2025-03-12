@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navMenu = document.querySelector(".navigation");
 
     hamburger.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
+        navMenu.classList.toggle("open");
     });
 
     const courses = [
