@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Tech Innovators Inc.",
+        "address": "123 Innovation Drive, Tech City, TC 12345",
+        "phone": "+1 (555) 123-4567",
+        "website": "https://www.techinnovators.com",
+        "image": "images/Tech.png",
+        "membership_level": 3,
+        "other_info": {
+            "industry": "Technology",
+            "founded": 2010,
+            "employees": 500
+        }
+    },
+    {
+        "name": "Green Earth Solutions",
+        "address": "456 Eco Lane, Green Valley, GV 67890",
+        "phone": "+1 (555) 234-5678",
+        "website": "https://www.greenearthsolutions.com",
+        "image": "images/Green.png",
+        "membership_level": 2,
+        "other_info": {
+            "industry": "Environmental Services",
+            "founded": 2005,
+            "employees": 300
+        }
+    },
+    {
+        "name": "Healthy Bites Cafe",
+        "address": "789 Wellness Street, Health Town, HT 11223",
+        "phone": "+1 (555) 345-6789",
+        "website": "https://www.healthybitescafe.com",
+        "image": "images/healthy.png",
+        "membership_level": 1,
+        "other_info": {
+            "industry": "Food & Beverage",
+            "founded": 2015,
+            "employees": 50
+        }
+    },
+    {
+        "name": "Bright Future Education",
+        "address": "101 Knowledge Road, Learning City, LC 44556",
+        "phone": "+1 (555) 456-7890",
+        "website": "https://www.brightfutureedu.com",
+        "image": "images/bright.png",
+        "membership_level": 2,
+        "other_info": {
+            "industry": "Education",
+            "founded": 2008,
+            "employees": 200
+        }
+    },
+    {
+        "name": "Swift Logistics",
+        "address": "202 Delivery Lane, Transit Town, TT 77889",
+        "phone": "+1 (555) 567-8901",
+        "website": "https://www.swiftlogistics.com",
+        "image": "images/swift.png",
+        "membership_level": 3,
+        "other_info": {
+            "industry": "Logistics",
+            "founded": 2012,
+            "employees": 1000
+        }
+    },
+    {
+        "name": "Creative Minds Agency",
+        "address": "303 Inspiration Avenue, Art City, AC 99001",
+        "phone": "+1 (555) 678-9012",
+        "website": "https://www.creativemindsagency.com",
+        "image": "images/creative.png",
+        "membership_level": 1,
+        "other_info": {
+            "industry": "Creative Services",
+            "founded": 2018,
+            "employees": 75
+        }
+    },
+    {
+        "name": "Summit Outdoor Gear",
+        "address": "404 Adventure Trail, Mountain Peak, MP 22334",
+        "phone": "+1 (555) 789-0123",
+        "website": "https://www.summitoutdoorgear.com",
+        "image": "images/summit.png",
+        "membership_level": 2,
+        "other_info": {
+            "industry": "Retail",
+            "founded": 2003,
+            "employees": 150
+        }
+    }
+]

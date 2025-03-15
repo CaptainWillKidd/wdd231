@@ -1,0 +1,47 @@
+@media (max-width: 739px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .navigation.open {
+        max-height: 500px;
+    }
+
+    nav a {
+        padding: 0.5rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+    
+    .member-card {
+        margin: 10px 0;
+    }
+    
+    #view-toggle {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
