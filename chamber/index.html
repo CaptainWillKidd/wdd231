@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home Page</title>
+    <meta name="description" content="This page is out home page of our Chamber">
+    <meta name="author" content="Willian Alves Canuto">
+    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://captainwillkidd.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:url" content="https://captainwillkidd.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Our Home Page">
+    <meta property="og:site_name" content="Chamber Directory">
+    <link rel="icon" href="chamberfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <script src="scripts/chamber.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div>
+             <div class="nome"><span>Chamber Home Page</span></div>
+ 
+             <nav id="animated-nav">
+                 <button class="hamburger" aria-label="Toggle navigation">
+                     &#9776;
+                 </button>
+                 <ul class="navigation">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="#">Discover</a></li>
+                     <li><a href="directory.html">Directory</a></li>
+                     <li><a href="#">Join</a></li>
+                 </ul>
+             </nav>
+         </div> 
+     </header>
+
+     <main>
+        <section class="hero-banner">
+            <h1>Welcome to Our Chamber</h1>
+            <p>Our Chamber is a place where you can find the best companies in the market. We have a directory with a variety of businesses and services to meet your needs. Explore the list below to find the right company for you:</p>
+        </section>
+
+        <section class="call_to_action">
+            <button type="button">Join the Chamber of Commance now!!!</button>
+        </section>
+
+        <section class="events">
+            <div id="event1">
+                <h2>Small Business Networking Mixer</h2>
+                <p>Date: October 20, 2023
+                    Time: 5:30 PM - 7:30 PM
+                    Location: [Chamber Office] or [Local Venue Name]
+                    Details:
+                    Join local entrepreneurs and business leaders for an evening of networking, collaboration, and inspiration! Enjoy light refreshments, a keynote speech from [Local Business Owner/Expert], and opportunities to connect with potential partners.
+                    Highlights:
+                    
+                    Raffle prizes for attendees
+                    
+                    Free business resource toolkit for members
+                    
+                    Complimentary appetizers and beverages</p>
+            </div>
+
+            <div id="event2">
+                <h2>"Grow Your Business" Workshop Series: Digital Marketing Trends</h2>
+                <p>Date: November 3, 2023
+                    Time: 9:00 AM - 11:00 AM
+                    Format: Hybrid (In-person at [Location] or Virtual via Zoom)
+                    Details:
+                    Learn actionable strategies to boost your online presence in this expert-led workshop. Topics include social media marketing, SEO optimization, and email campaign best practices. Perfect for small businesses and startups!
+                    Speakers:
+                    
+                    [Local Marketing Agency Representative]
+                    
+                    [SEO Specialist/Influencer]
+                    Bonus: Free 1:1 consultation slots for attendees (first-come, first-served).</p>
+            </div>
+        </section>
+
+        <section class="weather"></section>
+
+        <div id="chamber-cards" class="grid-view"></div>
+     </main>
+
+     <footer>
+        <div class="top">
+            <span id="currentyear"></span> &copy; 🗿Willian Alves Canuto🗿 | WDD 231 | São Paulo, Brazil
+        </div>
+
+        <div class="footer-bottom">
+            <span id="lastmodified"></span>
+        </div>
+    </footer>
+</body>
+</html>

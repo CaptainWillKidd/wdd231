@@ -113,6 +113,34 @@ main{
     font-size: 20px;
 }
 
+.hero-banner {
+    background: url("../images/chamber.jpg") no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+
+.hero-banner h1{
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-banner p{
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
 #view-toggle {
     margin: 1rem 0;
     padding: 0.5rem 1rem;
