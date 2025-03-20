@@ -10,14 +10,14 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://captainwillkidd.github.io/wdd231/chamber/images/chamber.jpg">
     <meta property="og:image:width" content="1200">
-    <meta property="og:url" content="https://captainwillkidd.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://captainwillkidd.github.io/wdd231/chamber/index.html">
     <meta property="og:description" content="Our Home Page">
     <meta property="og:site_name" content="Chamber Directory">
     <link rel="icon" href="chamberfavicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/common.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -44,50 +44,76 @@
 
      <main>
         <section class="hero-banner">
-            <h1>Welcome to Our Chamber</h1>
-            <p>Our Chamber is a place where you can find the best companies in the market. We have a directory with a variety of businesses and services to meet your needs. Explore the list below to find the right company for you:</p>
+            <div class="hero-content">
+                <h1>Welcome to Our Chamber</h1>
+                <p>Our Chamber is a place where you can find the best companies in the market. We have a directory with a variety of businesses and services to meet your needs. Explore the list below to find the right company for you:</p>
+            </div>
         </section>
 
-        <section class="call_to_action">
+        <div class="call_to_action">
             <button type="button">Join the Chamber of Commance now!!!</button>
-        </section>
+        </div>
 
         <section class="events">
-            <div id="event1">
-                <h2>Small Business Networking Mixer</h2>
-                <p>Date: October 20, 2023
-                    Time: 5:30 PM - 7:30 PM
-                    Location: [Chamber Office] or [Local Venue Name]
-                    Details:
-                    Join local entrepreneurs and business leaders for an evening of networking, collaboration, and inspiration! Enjoy light refreshments, a keynote speech from [Local Business Owner/Expert], and opportunities to connect with potential partners.
-                    Highlights:
-                    
-                    Raffle prizes for attendees
-                    
-                    Free business resource toolkit for members
-                    
-                    Complimentary appetizers and beverages</p>
+            <h2>Upcoming Events</h2>
+            
+            <div class="event-card">
+                <h3>Small Business Networking Mixer</h3>
+                <ul>
+                    <li><strong>Date:</strong> October 20, 2023</li>
+                    <li><strong>Time:</strong> 5:30 PM - 7:30 PM</li>
+                    <li><strong>Location:</strong> Chamber Office</li>
+                    <li><strong>Details:</strong>
+                        <ul>
+                            <li>Join local entrepreneurs and business leaders for an evening of networking and collaboration.</li>
+                            <li>Keynote speech from a local business expert.</li>
+                            <li>Raffle prizes for attendees.</li>
+                            <li>Free business resource toolkit for members.</li>
+                            <li>Complimentary appetizers and beverages.</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-
-            <div id="event2">
-                <h2>"Grow Your Business" Workshop Series: Digital Marketing Trends</h2>
-                <p>Date: November 3, 2023
-                    Time: 9:00 AM - 11:00 AM
-                    Format: Hybrid (In-person at [Location] or Virtual via Zoom)
-                    Details:
-                    Learn actionable strategies to boost your online presence in this expert-led workshop. Topics include social media marketing, SEO optimization, and email campaign best practices. Perfect for small businesses and startups!
-                    Speakers:
-                    
-                    [Local Marketing Agency Representative]
-                    
-                    [SEO Specialist/Influencer]
-                    Bonus: Free 1:1 consultation slots for attendees (first-come, first-served).</p>
+        
+            <div class="event-card">
+                <h3>"Grow Your Business" Workshop Series: Digital Marketing Trends</h3>
+                <ul>
+                    <li><strong>Date:</strong> November 3, 2023</li>
+                    <li><strong>Time:</strong> 9:00 AM - 11:00 AM</li>
+                    <li><strong>Format:</strong> Hybrid (In-person at Chamber Office or Virtual via Zoom)</li>
+                    <li><strong>Details:</strong>
+                        <ul>
+                            <li>Learn actionable strategies to boost your online presence.</li>
+                            <li>Topics include social media marketing, SEO optimization, and email campaign best practices.</li>
+                            <li>Perfect for small businesses and startups.</li>
+                            <li>Free 1:1 consultation slots for attendees (first-come, first-served).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Speakers:</strong>
+                        <ul>
+                            <li>Local Marketing Agency Representative</li>
+                            <li>SEO Specialist/Influencer</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="weather"></section>
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+            <div id="spotlight-cards" class="grid-view"></div>
+        </section>
 
-        <div id="chamber-cards" class="grid-view"></div>
+        <div class="weather">
+            <div class="weather-location">São Paulo, SP - Brazil</div>
+            <div class="weather-info">
+                <span id="current-temp"></span>
+                <figure>
+                    <img id="weather-icon" src="#" alt="weather icon">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
      </main>
 
      <footer>

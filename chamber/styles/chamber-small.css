@@ -37,6 +37,22 @@
         width: 100%;
         padding: 1rem;
     }
+
+    .weather {
+        padding: 1rem;
+    }
+
+    .weather-location {
+        font-size: 1.2rem;
+    }
+
+    #current-temp {
+        font-size: 1.8rem;
+    }
+
+    .weather figcaption {
+        font-size: 1rem;
+    }
     
 }
 
