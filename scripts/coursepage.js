@@ -20,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             credits: 2,
             certificate: 'Web and Computer Programming',
             description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-            technology: [
-                'Python'
-            ],
+            technology: ['Python'],
             completed: true
         },
         {
@@ -32,10 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
             credits: 2,
             certificate: 'Web and Computer Programming',
             description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-            technology: [
-                'HTML',
-                'CSS'
-            ],
+            technology: ['HTML', 'CSS'],
             completed: true
         },
         {
@@ -45,9 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
             credits: 2,
             certificate: 'Web and Computer Programming',
             description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-            technology: [
-                'Python'
-            ],
+            technology: ['Python'],
             completed: true
         },
         {
@@ -57,9 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             credits: 2,
             certificate: 'Web and Computer Programming',
             description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-            technology: [
-                'C#'
-            ],
+            technology: ['C#'],
             completed: true
         },
         {
@@ -69,11 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
             credits: 2,
             certificate: 'Web and Computer Programming',
             description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-            technology: [
-                'HTML',
-                'CSS',
-                'JavaScript'
-            ],
+            technology: ['HTML', 'CSS', 'JavaScript'],
             completed: true
         },
         {
@@ -83,11 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
             credits: 2,
             certificate: 'Web and Computer Programming',
             description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-            technology: [
-                'HTML',
-                'CSS',
-                'JavaScript'
-            ],
+            technology: ['HTML', 'CSS', 'JavaScript'],
             completed: false
         }
     ];
@@ -105,6 +88,33 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     dynamicContent.insertAdjacentHTML('afterbegin', filterButtons);
 
+    function displayCourseDetails(course) {
+        const dialogContent = document.getElementById('dialog-content');
+        const dialog = document.getElementById('dialog');
+
+        dialogContent.innerHTML = `
+            <h2>${course.subject} ${course.number}</h2>
+            <h3>${course.title}</h3>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p>${course.description}</p>
+            <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        `;
+        dialog.showModal();
+    }
+
+    const closeDialogButton = document.getElementById('close-dialog');
+    closeDialogButton.addEventListener('click', () => {
+        document.getElementById('dialog').close();
+    });
+
+    const dialog = document.getElementById('dialog');
+    dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) {
+            dialog.close();
+        }
+    });
+
     function renderCourses(filter = 'all') {
         const filteredCourses = courses.filter(course => {
             if (filter === 'all') return true;
@@ -112,7 +122,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         const coursesHTML = filteredCourses.map(course => `
-            <div class="course-card ${course.completed ? 'completed' : ''}">
+            <div class="course-card ${course.completed ? 'completed' : ''}" 
+                 data-subject="${course.subject}" 
+                 data-number="${course.number}">
                 <h3>${course.subject} ${course.number} - ${course.title}</h3>
                 <p>${course.description}</p>
                 <div class="tech-list">
@@ -126,6 +138,13 @@ document.addEventListener("DOMContentLoaded", function() {
         
         dynamicContent.innerHTML = filterButtons + coursesHTML;
         document.querySelector('.credits-total').textContent = `Total Credits Required: ${totalCredits}`;
+
+        document.querySelectorAll('.course-card').forEach(card => {
+            const subject = card.dataset.subject;
+            const number = parseInt(card.dataset.number, 10);
+            const course = courses.find(c => c.subject === subject && c.number === number);
+            card.addEventListener('click', () => displayCourseDetails(course));
+        });
     }
 
     document.addEventListener('click', (e) => {
