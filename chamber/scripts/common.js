@@ -1,4 +1,17 @@
 
+function openModal(modalId, event) {
+    event.preventDefault();
+    const modal = document.getElementById(modalId);
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto';
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const currentYear = new Date().getFullYear();
     document.getElementById("currentyear").textContent = currentYear;
@@ -8,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".navigation");
-    hamburger?.addEventListener("click", () => {
-        navMenu.classList.toggle("open");
-    });
+    if (hamburger) {
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("open");
+        });
+    }
 
     if (document.getElementById('current-temp')) {
         const currentTemp = document.querySelector('#current-temp');
@@ -70,4 +85,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         loadSpotlights();
     }
+
+    window.addEventListener('click', function(event) {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
 });

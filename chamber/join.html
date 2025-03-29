@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce Home Page</title>
-    <meta name="description" content="This page is out home page of our Chamber">
+    <meta name="description" content="This page allows users to join the Chamber of Commerce. It includes a form for personal and business information, membership level selection, and a reason for joining.">
     <meta name="author" content="Willian Alves Canuto">
-    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:title" content="Chamber Join Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://captainwillkidd.github.io/wdd231/chamber/images/chamber.jpg">
     <meta property="og:image:width" content="1200">
-    <meta property="og:url" content="https://captainwillkidd.github.io/wdd231/chamber/index.html">
-    <meta property="og:description" content="Our Home Page">
-    <meta property="og:site_name" content="Chamber Directory">
+    <meta property="og:url" content="https://captainwillkidd.github.io/wdd231/chamber/join.html">
+    <meta property="og:description" content="Join the Chamber of Commerce and enjoy various membership benefits. Fill out the form to get started!">
+    <meta property="og:site_name" content="Chamber of Commerce">
     <link rel="icon" href="chamberfavicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
@@ -42,12 +42,12 @@
          </div> 
      </header>
 
-     <main>
+     <main class="join-layout">
         <h1>Join Our Chamber</h1>
         <form action="thankyou.html" method="get" class="join-chamber">
             <fieldset>
                 <div class="form-item column2">
-                    <label for="firstname">Fist Name: <input placeholder="First Name" type="text" name="fistname" id="fistname" required></label>
+                    <label for="firstname">First Name: <input placeholder="First Name" type="text" name="firstname" id="firstname" required></label>
                 </div>
 
                 <div class="form-item column2">
@@ -84,10 +84,92 @@
                 <textarea id="reason" name="reason" rows="5" cols="40" placeholder="Write your reason here..." required></textarea>
             </fieldset>
 
-            <label for="timestamp"><input type="hidden" name="timestamp" id="timestamp"></label>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
 
             <button type="submit">Join Chamber</button>
         </form>
+
+        <div class="membership-cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <p>Free</p>
+                <p>Basic Benefits</p>
+                <a href="#" onclick="openModal('np-modal', event)">View Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Bronze</h3>
+                <p>R$1500/year</p>
+                <p>Enhanced Benefits</p>
+                <a href="#" onclick="openModal('bronze-modal', event)">View Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Silver</h3>
+                <p>R$2000/year</p>
+                <p>Premium Benefits</p>
+                <a href="#" onclick="openModal('silver-modal', event)">View Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Gold</h3>
+                <p>R$3000/year</p>
+                <p>Ultimate Benefits</p>
+                <a href="#" onclick="openModal('gold-modal', event)">View Benefits</a>
+            </div>
+        </div>
+        
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np-modal')">&times;</span>
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Free membership for non-profits</li>
+                    <li>Access to member directory</li>
+                    <li>Monthly newsletter</li>
+                    <li>Basic event access</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h3>Bronze Benefits</h3>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>10% event discounts</li>
+                    <li>Business listing in directory</li>
+                    <li>2 training sessions/year</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h3>Silver Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>20% event discounts</li>
+                    <li>Priority event registration</li>
+                    <li>Monthly training sessions</li>
+                    <li>Basic advertising inclusion</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h3>Gold Benefits</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>30% event discounts</li>
+                    <li>Home page spotlight positions</li>
+                    <li>Premium advertising placement</li>
+                    <li>VIP event access</li>
+                    <li>Unlimited training access</li>
+                </ul>
+            </div>
+        </div>
      </main>
 
      <footer>
@@ -99,5 +181,11 @@
             <span id="lastmodified"></span>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function() {
+            document.getElementById('timestamp').value = new Date().toISOString();
+        });
+        </script>
 </body>
 </html>

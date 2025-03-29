@@ -61,3 +61,29 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 767px) {
+    .join-chamber {
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    .join-chamber fieldset {
+        padding: 1rem;
+    }
+    
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .join-chamber {
+        padding: 1rem;
+    }
+    
+    .membership-cards {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+}
