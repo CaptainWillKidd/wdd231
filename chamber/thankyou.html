@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Home Page</title>
+    <meta name="description" content="This page is out home page of our Chamber">
+    <meta name="author" content="Willian Alves Canuto">
+    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://captainwillkidd.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:url" content="https://captainwillkidd.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Our Home Page">
+    <meta property="og:site_name" content="Chamber Directory">
+    <link rel="icon" href="chamberfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <script src="scripts/common.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div>
+             <div class="nome"><span>Chamber of Commerce Home Page</span></div>
+ 
+             <nav id="animated-nav">
+                 <button class="hamburger" aria-label="Toggle navigation">
+                     &#9776;
+                 </button>
+                 <ul class="navigation">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="#">Discover</a></li>
+                     <li><a href="directory.html">Directory</a></li>
+                     <li><a href="join.html">Join</a></li>
+                 </ul>
+             </nav>
+         </div> 
+     </header>
+
+     <main>
+        <section class="thankyou">
+            <div class="confirmation">
+                <h2>Thank you for applying</h2>
+                <p>Your application has been received. We will review your information and contact you shortly.</p>
+            </div>
+
+            <div class="review">
+                <h3>Application Details</h3>
+                <p><strong>First Name: </strong> <span id="firstname"></span></p>
+                <p><strong>Last Name: </strong> <span id="lastname"></span></p>
+                <p><strong>Organizational Title: </strong> <span id="organizational"></span></p>
+                <p><strong>Email: </strong> <span id="email"></span></p>
+                <p><strong>Phone Number: </strong> <span id="phonenumber"></span></p>
+                <p><strong>Business Name: </strong> <span id="business"></span></p>
+                <p><strong>Membership Level: </strong> <span id="membership"></span></p>
+                <p><strong>Reason for Joining: </strong> <span id="reason"></span></p>
+                <p><strong>Time of Application: </strong> <span id="timestamp"></span></p>
+            </div>
+        </section>
+     </main>
+
+     <footer>
+        <div class="top">
+            <span id="currentyear"></span> &copy; 🗿Willian Alves Canuto🗿 | WDD 231 | São Paulo, Brazil
+        </div>
+
+        <div class="footer-bottom">
+            <span id="lastmodified"></span>
+        </div>
+    </footer>
+</body>
+</html>
