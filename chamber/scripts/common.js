@@ -95,4 +95,26 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+    const visitMessage = document.getElementById('visit-message');
+    const currentDate = new Date();
+    
+    const lastVisit = localStorage.getItem('lastVisit');
+    
+    if (!lastVisit) {
+        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const lastVisitDate = new Date(lastVisit);
+        const timeDiff = currentDate - lastVisitDate;
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+        if (daysDiff === 0) {
+            visitMessage.textContent = "Back so soon! Awesome!";
+        } else {
+            const dayText = daysDiff === 1 ? "day" : "days";
+            visitMessage.textContent = `You last visited ${daysDiff} ${dayText} ago.`;
+        }
+    }
+    
+    localStorage.setItem('lastVisit', currentDate.toISOString());
 });

@@ -87,3 +87,29 @@
         margin-top: 2rem;
     }
 }
+
+@media (max-width: 640px) {
+    .cardy {
+        grid-template-areas:
+            "image"
+            "title"
+            "address"
+            "description"
+            "button";
+        grid-template-rows: auto;
+    }
+    
+    .cardy img {
+        height: 150px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .cardy {
+        grid-template-areas:
+            "image title"
+            "address address"
+            "description description"
+            "button button";
+    }
+}

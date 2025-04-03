@@ -490,3 +490,71 @@ main.join-layout h1 {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}	
+
+.cardy {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: grid;
+    gap: 1rem;
+}
+
+.cardy:hover {
+    transform: translateY(-5px);
+}
+
+.cardys-container {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.cardy img{
+    border-radius: 8px;
+}
+
+@media (min-width: 1025px) {
+    .cardys-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .cardy {
+        grid-template-areas: 
+            "image title"
+            "image address"
+            "image description"
+            "button button";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto 1fr;
+        min-height: 300px;
+    }
+
+    .cardy img {
+        height: 200px;
+    }
+}
+
+.visit-message {
+    padding: 1rem;
+    margin: 1rem auto;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

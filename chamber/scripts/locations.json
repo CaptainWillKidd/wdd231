@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Parque Ibirapuera",
+        "address": "Av. Pedro Álvares Cabral, Vila Mariana",
+        "description": "Principal parque urbano de São Paulo, com áreas verdes, museus e eventos culturais.",
+        "image": "images/discover/ibirapuera.webp"
+    },
+    {
+        "name": "MASP - Museu de Arte de São Paulo",
+        "address": "Av. Paulista, 1578 - Bela Vista",
+        "description": "Museu emblemático com acervo de arte europeia e brasileira, e arquitetura modernista.",
+        "image": "images/discover/masp.webp"
+    },
+    {
+        "name": "Avenida Paulista",
+        "address": "Avenida Paulista - Centro",
+        "description": "Símbolo da capital paulista, repleta de comércio, cultura e vida noturna.",
+        "image": "images/discover/paulista.webp"
+    },
+    {
+        "name": "Mercado Municipal",
+        "address": "R. da Cantareira, 306 - Centro",
+        "description": "Famoso pelo pastel de bacalhau e arquitetura com vitrais impressionantes.",
+        "image": "images/discover/mercadao.webp"
+    },
+    {
+        "name": "Catedral da Sé",
+        "address": "Praça da Sé - Centro",
+        "description": "Catedral neogótica, um dos principais templos religiosos da cidade.",
+        "image": "images/discover/se.webp"
+    },
+    {
+        "name": "Bairro da Liberdade",
+        "address": "Liberdade - Centro",
+        "description": "Bairro japonês com feiras temáticas, restaurantes e cultura oriental.",
+        "image": "images/discover/liberdade.webp"
+    },
+    {
+        "name": "Estádio do Morumbi",
+        "address": "Praça Roberto Gomes Pedrosa, Morumbi",
+        "description": "Estádio do São Paulo Futebol Clube e palco de grandes eventos.",
+        "image": "images/discover/morumbi.webp"
+    },
+    {
+        "name": "Teatro Municipal",
+        "address": "Praça Ramos de Azevedo - Centro",
+        "description": "Marco da arquitetura e da cultura, sede da Orquestra Sinfônica Municipal.",
+        "image": "images/discover/teatro.webp"
+    }
+]
