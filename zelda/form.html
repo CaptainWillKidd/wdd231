@@ -3,16 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelda Ocarina Of Time Fan Page: Story Page</title>
-    <meta name="description" content="This is a fan page for the game Zelda Ocarina Of Time. It contains information about the game, its characters, and its story.">
-    <meta name="author" content="Willian Alves Canuto">
-    <meta property="og:title" content="Zelda Ocarina Of Time Fan Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="#">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:url" content="#">
-    <meta property="og:description" content="This is a fan page for the game Zelda Ocarina Of Time. It contains information about the game, its characters, and its story.">
-    <meta property="og:site_name" content="Zelda Ocarina Of Time Fan Page">
+    <title>Zelda Ocarina Of Time Fan Page: Community</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +12,6 @@
     <link rel="stylesheet" href="styles/zot-small.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/common.js" defer></script>
-    <script src="scripts/story.js" defer></script>
 </head>
 <body>
 
@@ -42,13 +32,21 @@
         </nav>
     </header>
 
-    <main>
-        <div class="hero-banner2"><h1>The Legend Unfolded: Story Page</h1></div>
-        <div class="main-intro"><p>The Story of Zelda: Ocarina of Time</p></div>
-        <div class="main-intro"><p>Dive into the rich lore and captivating narrative of one of the most beloved games in history.</p></div>
-        <div id="story-container" class="main-intro"></div>
+    <main class="main-intro">
+        <h1>🗡️ Your Theory Has Been Recorded! 🛡️</h1>
+        <div id="formData"></div>
+        <a href="community.html" class="cta-button">Submit Another</a>
     </main>
     
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('formData').innerHTML = `
+            <p><strong>Name:</strong> ${params.get('name')}</p>
+            <p><strong>Favorite Character:</strong> ${params.get('character')}</p>
+            <p><strong>Theory:</strong> ${params.get('theory')}</p>
+        `;
+    </script>
+
     <footer>
         <div class="top">
             <span id="currentyear"></span> &copy; 🗿Willian Alves Canuto🗿 | São Paulo, Brazil

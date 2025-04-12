@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelda Ocarina Of Time Fan Page: Story Page</title>
+    <title>Zelda Ocarina Of Time Fan Page: Community</title>
     <meta name="description" content="This is a fan page for the game Zelda Ocarina Of Time. It contains information about the game, its characters, and its story.">
     <meta name="author" content="Willian Alves Canuto">
     <meta property="og:title" content="Zelda Ocarina Of Time Fan Page">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/zot-small.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/common.js" defer></script>
-    <script src="scripts/story.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
 
@@ -43,10 +43,48 @@
     </header>
 
     <main>
-        <div class="hero-banner2"><h1>The Legend Unfolded: Story Page</h1></div>
-        <div class="main-intro"><p>The Story of Zelda: Ocarina of Time</p></div>
-        <div class="main-intro"><p>Dive into the rich lore and captivating narrative of one of the most beloved games in history.</p></div>
-        <div id="story-container" class="main-intro"></div>
+        <div class="hero-banner3"><h1>Join the Zelda Community</h1></div>
+        <h2 class="page-title">Share Your Zelda Wisdom</h2>
+        
+        <form id="theoryForm" action="form.html" method="get">
+            <div class="form-group">
+                <label for="name">Hero's Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="theory">Your Theory:</label>
+                <textarea id="theory" name="theory" required></textarea>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Favorite Character:</legend>
+                <div class="radio-group">
+                    <input type="radio" id="link" name="character" value="Link" required>
+                    <label for="link">Link</label>
+
+                    <input type="radio" id="zelda" name="character" value="Zelda">
+                    <label for="zelda">Zelda</label>
+
+                    <input type="radio" id="ganon" name="character" value="Ganondorf">
+                    <label for="ganon">Ganondorf</label>
+
+                    <input type="radio" id="navi" name="character" value="Navi">
+                    <label for="navi">Navi</label>
+
+                    <input type="radio" id="happy" name="character" value="happy">
+                    <label for="happy">Happy Mask Salesman</label>
+                    
+                    <input type="radio" id="malon" name="character" value="Malon">
+                    <label for="malon">Malon</label>
+
+                    <input type="radio" id="saria" name="character" value="Saria">
+                    <label for="saria">Saria</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="cta-button">Submit to Hyrule</button>
+        </form>
     </main>
     
     <footer>
