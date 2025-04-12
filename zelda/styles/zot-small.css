@@ -1,0 +1,34 @@
+@media (max-width: 739px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .navigation.open {
+        max-height: 500px;
+    }
+
+    nav a {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-image {
+        width: 95%;
+        padding: 0.5rem;
+        border-width: 2px;
+    }
+    
+    .page-image img {
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "The Kokiri's Chosen",
+        "description": "Link awakens in Kokiri Forest, receiving his fairy Navi and the quest to meet the Great Deku Tree.",
+        "characters": ["Link", "Navi", "Great Deku Tree"],
+        "location": "Kokiri Forest",
+        "key_item": "Fairy Ocarina",
+        "image": "images/kokiri.webp"
+    },
+    {
+        "id": 2,
+        "title": "First Guardian Falls",
+        "description": "The Great Deku Tree reveals Ganondorf's betrayal before dying, sending Link to Hyrule Castle.",
+        "characters": ["Great Deku Tree", "Link"],
+        "location": "Deku Tree Dungeon",
+        "key_item": "Kokiri's Emerald",
+        "image": "images/deku.webp"
+    },
+    {
+        "id": 3,
+        "title": "Princess in Disguise",
+        "description": "Link meets Zelda disguised as a Sheikah, who warns of Ganondorf's plot through her window.",
+        "characters": ["Zelda", "Link"],
+        "location": "Hyrule Castle Town",
+        "key_item": "Zelda's Letter",
+        "image": "images/castle.webp"
+    },
+    {
+        "id": 4,
+        "title": "Goron's Trial",
+        "description": "Link saves the Gorons from starvation by defeating Dodongo's Cavern boss King Dodongo.",
+        "characters": ["Darunia", "Link"],
+        "location": "Death Mountain",
+        "key_item": "Goron's Ruby",
+        "image": "images/death.webp"
+    },
+    {
+        "id": 5,
+        "title": "Zora's Domain Frozen",
+        "description": "Link thaws Zora's Domain and retrieves the Spiritual Stone from Lord Jabu-Jabu.",
+        "characters": ["Princess Ruto", "Link"],
+        "location": "Zora's Domain",
+        "key_item": "Zora's Sapphire",
+        "image": "images/zora.webp"
+    },
+    {
+        "id": 6,
+        "title": "Door of Time Opened",
+        "description": "With all three Spiritual Stones, Link opens the sacred door and draws the Master Sword.",
+        "characters": ["Link"],
+        "location": "Temple of Time",
+        "key_item": "Master Sword",
+        "image": "images/time.webp"
+    },
+    {
+        "id": 7,
+        "title": "Seven Year Slumber",
+        "description": "Link awakens as an adult to find Hyrule devastated by Ganondorf's rule.",
+        "characters": ["Rauru", "Link"],
+        "location": "Sacred Realm",
+        "key_item": "Hero's Bow",
+        "image": "images/sacred.webp"
+    },
+    {
+        "id": 8,
+        "title": "Forest Temple Liberated",
+        "description": "Adult Link frees the Forest Temple from evil, awakening Sage Saria.",
+        "characters": ["Saria", "Link"],
+        "location": "Sacred Forest Meadow",
+        "key_item": "Forest Medallion",
+        "image": "images/meadow.webp"
+    },
+    {
+        "id": 9,
+        "title": "Fire Temple's Fury",
+        "description": "Link rescues the Gorons from Volvagia in Death Mountain's fiery depths.",
+        "characters": ["Darunia", "Link"],
+        "location": "Death Mountain Crater",
+        "key_item": "Fire Medallion",
+        "image": "images/fire.webp"
+    },
+    {
+        "id": 10,
+        "title": "Water Temple Trials",
+        "description": "In Zora's flooded ruins, Link battles Dark Link and Morpha to free Ruto.",
+        "characters": ["Princess Ruto", "Link"],
+        "location": "Lake Hylia",
+        "key_item": "Water Medallion",
+        "image": "images/water.webp"
+    },
+    {
+        "id": 11,
+        "title": "Shadow Temple Secrets",
+        "description": "Link navigates the haunted Shadow Temple to awaken Impa as a Sage.",
+        "characters": ["Impa", "Link"],
+        "location": "Graveyard",
+        "key_item": "Shadow Medallion",
+        "image": "images/shadow.webp"
+    },
+    {
+        "id": 12,
+        "title": "Spirit Temple Duality",
+        "description": "Using time travel, Link completes both child/adult phases of the Spirit Temple.",
+        "characters": ["Nabooru", "Link"],
+        "location": "Desert Colossus",
+        "key_item": "Spirit Medallion",
+        "image": "images/desert.webp"
+    },
+    {
+        "id": 13,
+        "title": "Light Sage Awakened",
+        "description": "Zelda reveals herself as the final Sage in Ganondorf's captured castle.",
+        "characters": ["Zelda", "Link"],
+        "location": "Ganon's Castle",
+        "key_item": "Light Medallion",
+        "image": "images/ganon.webp"
+    },
+    {
+        "id": 14,
+        "title": "Final Confrontation",
+        "description": "Link battles Ganondorf through multiple phases: human, beast, and cosmic forms.",
+        "characters": ["Ganondorf", "Link"],
+        "location": "Ganon's Tower",
+        "key_item": "Light Arrows",
+        "image": "images/final.webp"
+    },
+    {
+        "id": 15,
+        "title": "Era Sealed",
+        "description": "Zelda returns Link to his childhood, creating a split timeline and peace restored.",
+        "characters": ["Zelda", "Link"],
+        "location": "Temple of Time",
+        "key_item": "Ocarina of Time",
+        "image": "images/finaltime.webp"
+    }
+]

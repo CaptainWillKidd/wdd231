@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda Ocarina Of Time Fan Page: Home Page</title>
+    <meta name="description" content="This is a fan page for the game Zelda Ocarina Of Time. It contains information about the game, its characters, and its story.">
+    <meta name="author" content="Willian Alves Canuto">
+    <meta property="og:title" content="Zelda Ocarina Of Time Fan Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:url" content="#">
+    <meta property="og:description" content="This is a fan page for the game Zelda Ocarina Of Time. It contains information about the game, its characters, and its story.">
+    <meta property="og:site_name" content="Zelda Ocarina Of Time Fan Page">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/zot.css">
+    <link rel="stylesheet" href="styles/zot-small.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav id="animated-nav">
+            <div class="logo">
+                <img src="images/logo.webp" alt="Zelda Ocarina Of Time Logo" width="100" height="100">
+            </div>
+            <div class="title"><span>The Legend Of Zelda Ocarina Of Time Fan Page</span></div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <h1>Welcome to Zelda Ocarina of Time's Fan Page 🧚‍♂️</h1>
+        </section>
+        
+        <div class="main-intro">
+            <section class="intro-text">
+                <h2>Embark on a Timeless Adventure</h2>
+                <p>Step into the legendary world of <em>The Legend of Zelda: Ocarina of Time</em>, the iconic Nintendo 64 masterpiece that redefined adventure gaming. Journey through the mystical land of Hyrule as Link, a young hero destined to wield the Ocarina of Time and confront the malevolent Ganondorf.</p>
+            </section>
+        
+            <section class="features">
+                <h2>Discover a World of Wonders</h2>
+                <ul class="features-list">
+                    <li>🗺️ Traverse sprawling fields, ancient temples, and shadowy dungeons</li>
+                    <li>🎶 Master the Ocarina's melodies to bend time and fate</li>
+                    <li>🤝 Forge alliances with unforgettable characters</li>
+                </ul>
+            </section>
+        
+            <section class="legacy">
+                <h2>Relive the Legend</h2>
+                <p>First released in 1998, Ocarina of Time remains a cornerstone of gaming history, celebrated for its:</p>
+                <ul class="legacy-list">
+                    <li>🎮 Revolutionary gameplay</li>
+                    <li>🎵 Hauntingly beautiful soundtrack</li>
+                    <li>📖 Unforgettable storytelling</li>
+                </ul>
+            </section>
+        
+            <blockquote class="zelda-quote">
+                "The flow of time is always cruel... Its speed seems different for each person, but no one can change it."
+                <cite>— Princess Zelda</cite>
+            </blockquote>
+
+            <div class="carrossel-container">
+                <h2>Explore the Carrossel</h2>
+                <div class="carrossel-slide active">
+                    <img src="images/hero.webp" alt="Templo do Tempo" loading="lazy">
+                </div>
+                
+                <div class="carrossel-slide">
+                    <img src="images/logo.webp" alt="Link Adulto" loading="lazy">
+                </div>
+                
+                <div class="carrossel-slide">
+                    <img src="images/hero.webp" alt="Ganondorf" loading="lazy">
+                </div>
+            
+                <button class="carrossel-btn prev">❮</button>
+                <button class="carrossel-btn next">❯</button>
+            
+                <div class="indicadores"></div>
+            </div>
+        
+            <div class="cta">
+                <a href="story.html" class="cta-button">Begin Your Journey</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="top">
+            <span id="currentyear"></span> &copy; 🗿Willian Alves Canuto🗿 | São Paulo, Brazil
+        </div>
+
+        <div class="footer-bottom">
+            <span id="lastmodified"></span>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -54,6 +54,10 @@ nav {
     margin-top: 10px;
 }
 
+body{
+    background-color: var(--primary-color);
+}
+
 .hamburger {
     background: none;
     border: none;
